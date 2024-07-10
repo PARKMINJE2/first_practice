@@ -91,6 +91,28 @@ working directory   (add)→   staging area     (commit)→  repository      (pu
 
 $git init     #시작
 
-$rm -rf .git     또는 git 폴더 삭제하기     #종료
+$rm -rf .git     또는 git 폴더 삭제하기     #종료(remove 약자)
+
+$touch a.txt      #제목이 a인 텍스트파일을 CLI로 생성
+
+$ls     #파일 내부 확인
+
+$mkdir new_folder    #new_folder라는 폴더를 CLI로 생성
+
+$rm -r new_folder    #파일 삭제
 
 $git clone https://github.com/PARKMINJE2/first_practice.git(shift+insert)
+
+$git add .     #모든 파일 add
+
+$git status    #상태 확인. commit 할 상태가 되었나 확인
+
+$git config —global [user.name](http://user.name) “”     #최초 1회 이름 설정 
+
+$git config —global [user.email](http://user.email) “”     #최초 1회 이메일 설정
+
+$git commit -m “”    #commit
+
+$git log    #commit 되었나 확인
+
+$git push -u (“shift + insert”) master    #push로 마무리
