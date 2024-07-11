@@ -31,6 +31,18 @@ bash는 tab키를 이용해서 자동완성
 
 : 간편한 명령어, 편리한 개발환경
 
+=============================================
+
+git 쓸때 GUI로 다뤄야 하나요? CLI로 다뤄야 하나요?
+---> 그때 그때 다르다 둘다 써야한다.
+대부분은 CLI를 쓴지만, diff, graph는 GUI를 쓴다.
+
+- CLI의 장점 1 : Commit 명령어 1초면 끝 (GUI는 10초걸린다)
+- 2 : 20년전 배웠으면 지금도 쓰고 있고, 앞으로도 쓸것이다.
+- GUI의 장점 1 : 보기편하고, 친숙하고, 기능도 다있다.
+- 2. : diff 파일 비교, Graph (시각적이고 복잡한 분석) 훨씬 보기좋다.
+
+
 ============================================
 
 IDE : 통합 개발 환경
@@ -46,7 +58,7 @@ Java : IntelliJ
 =============================================
 
 URL : "https://" 로 시작하는 웹주소
-API : Application Programming Interface(도구), 클라언트가 서버에게 요청하는 규칙
+API : Application Programming Interface (수단), 클라언트가 서버에게 요청하는 수단
 API키는 서버 개발자가 정한다
 
 =============================================
@@ -87,9 +99,9 @@ git 종료
 --->   rm a.txt
 현재 디렉토리의 파일 목록 확인
 --->   ls
-폴더 생성
+디렉토리 생성
 --->   mkdir new_folder
-폴더 삭제
+디렉토리 삭제
 --->   rm -r new_folder
 작업중인 디렉토리 변경
 --->   cd
@@ -106,16 +118,68 @@ git config --global user.email "sangho.jang@mincoding.co.kr"
 git commit -m "first_practice"
 git log
 
+git remote add origin https://github.com/shjang89/7_11_practice.git
+-> 로컬 저장소에서 원격 저장소의 주소를 추가하겠다.
+-> origin은 원격저장소의 별칭, 그 뒷부분은 URL
+git remote -v
+
+git push origin +master
+
+*주의
+.gitignore
+---> add 하지 않을 파일명을 작성한다.(예 api key, 가상환경 등등..)
+
+gitignore.io : gitignore 작성 제공 사이트(프레임워크 등)
+
+* pull 과 clone 차이
+
+만약 새로운 환경에서 github에 있는 프로젝를 받을때
+clone
+---> git clone https://github.com/shjang89/7_11_practice.git
+
+이미 로컬에서 작업 중이고, 원격 저장소에 업데이트가 있는 경우
+pull
+---> git pull origin master
 
 
+===========================================
 
+오늘 ssafy 강의실에서 push ---> 집에서 clone ---> 다음 날 ssafy강의실에서
+변경사항들 push(업데이트) ---> 집에서 pull
 
+=============================================
 
+ssafy 강의실에서
+자리를 바꾸면 제어판의 자격증명관리자에서 github 삭제 후 처음부터 진행
 
+===================================================
 
+html(= hyper text markup language)
 
+markdown
 
+여기서 m은 같은 약자이다. 
 
+공통점 : 로직이 작성되지 않는다.
 
+mardown을 왜 배우는지?
+github에서 README.md 파일로 활용 --> 프로젝트에 대한 설명을 문서화 --> 가독성, 편의성
 
+================================================================
 
+런타임
+
+닌텐도 팩
+실행머신 <---- 런타임 
+
+JavaScript로 만든 게임 App
+런타임 <----- Node.js
+
+Python으로 만든 App
+런타임 <---- CPython, Pypy(CPython 에서 속도를 올린 런타임)
+
+Java로 만든 게임 App
+런타임 <---- JVM(Java Virtual Machine)
+
+C++, C 로 만든 App
+런타임이 없어요~~~~~~
